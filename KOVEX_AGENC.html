@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KOVEX AGENCY | Agencia de Marketing Digital en Cartago, Valle del Cauca</title>
+<meta name="description" content="Agencia de marketing digital en Cartago, Colombia. Creamos contenido estratégico, manejamos redes sociales y lanzamos campañas publicitarias que generan ventas reales. Más de 2.3M reproducciones generadas. ¡Diagnóstico gratis!">
+<meta name="keywords" content="agencia marketing digital Cartago, manejo redes sociales Valle del Cauca, agencia publicidad Colombia, marketing digital Cartago Valle, contenido redes sociales Colombia, Meta Ads Colombia, KOVEX">
+<meta name="author" content="Kovex Agency – Nicol Montoya">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kovexagency.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kovexagency.com/">
+<meta property="og:title" content="KOVEX AGENCY | Crecimiento Real, No Seguidores Vacíos">
+<meta property="og:description" content="Transformamos marcas en Cartago y toda Colombia. Contenido estratégico, pauta publicitaria y gestión de redes que generan ventas reales. +2.3M reproducciones generadas.">
+<meta property="og:image" content="https://kovexagency.com/og-image.jpg">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Kovex Agency">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KOVEX AGENCY | Arquitectura de Crecimiento">
+<meta name="twitter:description" content="Agencia de marketing digital en Cartago, Colombia. Resultados reales, no seguidores vacíos.">
+<meta name="twitter:image" content="https://kovexagency.com/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Kovex Agency",
+  "description": "Agencia de marketing digital especializada en contenido estratégico, manejo de redes sociales y publicidad digital en Cartago, Valle del Cauca, Colombia.",
+  "url": "https://kovexagency.com",
+  "telephone": "+573133853506",
+  "email": "hola@kovexagency.com",
+  "founder": { "@type": "Person", "name": "Nicol Montoya" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cartago",
+    "addressLocality": "Cartago",
+    "addressRegion": "Valle del Cauca",
+    "addressCountry": "CO"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 4.7389, "longitude": -75.9120 },
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://instagram.com/kovexagency",
+    "https://tiktok.com/@kovexagency"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   VARIABLES Y RESET
+══════════════════════════════════════════════ */
+:root {
+  --bg:   #000000;
+  --pn:   #0A0A0A;
+  --cd:   #1A1A1A;
+  --tm:   #7A7A7A;
+  --tl:   #C8C8C8;
+  --tw:   #FFFFFF;
+  --fh:   'Inter', sans-serif;
+  --fb:   'DM Sans', sans-serif;
+  --bz:   cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  --nav-h: 70px;
+  --section-hue: 0deg;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--tl);
+  font-family: var(--fb);
+  overflow-x: hidden;
+  cursor: none;
+}
+h1, h2, h3, h4 {
+  font-family: var(--fh);
+  color: var(--tw);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ══════════════════════════════════════════════
+   CUSTOM CURSOR
+══════════════════════════════════════════════ */
+#cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width .15s, height .15s, background .15s;
+  will-change: transform;
+}
+#cursor-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width .3s var(--bz), height .3s var(--bz), border-color .3s, opacity .3s;
+  will-change: transform;
+}
+body.hovering #cursor-dot { width: 12px; height: 12px; background: #fff; }
+body.hovering #cursor-ring { width: 54px; height: 54px; border-color: rgba(255,255,255,0.8); }
+body.clicking #cursor-dot { transform: translate(-50%,-50%) scale(0.6); }
+body.clicking #cursor-ring { transform: translate(-50%,-50%) scale(0.8); }
+
+/* ══════════════════════════════════════════════
+   STAR FIELD – TRES CAPAS
+══════════════════════════════════════════════ */
+#star-field {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  will-change: transform, opacity;
+}
+.star-sm { animation: twinkle var(--d,3s) var(--delay,0s) ease-in-out infinite alternate; }
+.star-md { animation: twinkle-md var(--d,4s) var(--delay,0s) ease-in-out infinite alternate; }
+.star-lg { animation: twinkle-lg var(--d,5s) var(--delay,0s) ease-in-out infinite alternate; }
+
+@keyframes twinkle    { from{opacity:var(--op,.2);transform:scale(1)} to{opacity:calc(var(--op,.2)*2.5);transform:scale(1.3)} }
+@keyframes twinkle-md { from{opacity:var(--op,.3);transform:scale(1)} to{opacity:calc(var(--op,.3)*2);transform:scale(1.5)} }
+@keyframes twinkle-lg { from{opacity:var(--op,.4);transform:scale(1) blur(0px)} to{opacity:calc(var(--op,.4)*1.8);transform:scale(1.6);filter:blur(1px)} }
+
+/* ══════════════════════════════════════════════
+   GRID PARALLAX 3D
+══════════════════════════════════════════════ */
+#grid {
+  position: fixed;
+  inset: -20vh 0;
+  width: 100vw;
+  height: 140vh;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+
+/* ══════════════════════════════════════════════
+   CURSOR GLOW (radial que sigue al mouse)
+══════════════════════════════════════════════ */
+#cursor-glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.09) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  mix-blend-mode: overlay;
+  transition: width .3s, height .3s;
+  will-change: transform;
+}
+
+/* ══════════════════════════════════════════════
+   SECTION COLOR OVERLAY
+══════════════════════════════════════════════ */
+#section-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  transition: background .8s ease;
+}
+
+/* ══════════════════════════════════════════════
+   PARTICLE CANVAS
+══════════════════════════════════════════════ */
+#particle-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9990;
+}
+
+/* ══════════════════════════════════════════════
+   RIPPLE
+══════════════════════════════════════════════ */
+.ripple {
+  position: fixed;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  transform: scale(0);
+  animation: ripple-anim .7s ease-out forwards;
+  pointer-events: none;
+  z-index: 9998;
+}
+@keyframes ripple-anim { to { transform: scale(5); opacity: 0; } }
+
+/* ══════════════════════════════════════════════
+   ENERGY WAVE (botones agregar)
+══════════════════════════════════════════════ */
+.wave-ring {
+  position: fixed;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  pointer-events: none;
+  z-index: 9997;
+  animation: wave-out .8s ease-out forwards;
+  transform: translate(-50%,-50%) scale(0);
+}
+@keyframes wave-out { to { transform: translate(-50%,-50%) scale(3); opacity: 0; } }
+
+/* ══════════════════════════════════════════════
+   TOAST
+══════════════════════════════════════════════ */
+#toast-container {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9995;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+.toast {
+  background: rgba(20,20,20,0.95);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-family: var(--fh);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--tw);
+  letter-spacing: .04em;
+  backdrop-filter: blur(20px);
+  white-space: nowrap;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  animation: toast-in .4s var(--bz) forwards;
+}
+.toast.out { animation: toast-out .3s ease-in forwards; }
+@keyframes toast-in  { from{opacity:0;transform:translateY(20px) scale(.9)} to{opacity:1;transform:translateY(0) scale(1)} }
+@keyframes toast-out { from{opacity:1;transform:translateY(0) scale(1)} to{opacity:0;transform:translateY(-15px) scale(.95)} }
+
+/* ══════════════════════════════════════════════
+   MARKETING TIP (bottom-left floating component)
+══════════════════════════════════════════════ */
+#marketing-tip {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 9994;
+  background: rgba(12,12,12,0.95);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 310px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity .4s, transform .4s var(--bz);
+  pointer-events: none;
+}
+#marketing-tip.show { opacity: 1; transform: translateX(0); }
+.mt-icon {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex-shrink: 0;
+}
+.mt-text { font-size: .78rem; line-height: 1.45; color: var(--tl); }
+
+/* ══════════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════════ */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  transition: background .4s, backdrop-filter .4s, border-bottom .4s;
+}
+#navbar.scrolled {
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nav-logo {
+  font-family: var(--fh);
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--tw);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.nav-logo span { color: var(--tm); }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  font-size: .85rem; font-weight: 500; color: var(--tm);
+  text-transform: uppercase; letter-spacing: .08em; transition: color .2s;
+}
+.nav-links a:hover { color: var(--tw); }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 22px; background: var(--tw); color: var(--bg);
+  font-family: var(--fh); font-weight: 700; font-size: .8rem;
+  text-transform: uppercase; letter-spacing: .06em; border-radius: 4px;
+  transition: all .3s var(--bz);
+}
+.nav-cta:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255,255,255,0.25); }
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: none; padding: 5px; z-index: 810;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--tw); border-radius: 2px; transition: all .3s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+#nav-drawer {
+  position: fixed; top: 0; right: -100%;
+  width: 100%; max-width: 320px; height: 100vh;
+  background: rgba(10,10,10,0.97); backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px); border-left: 1px solid rgba(255,255,255,0.08);
+  z-index: 805; display: flex; flex-direction: column;
+  padding: 100px 40px 40px; transition: right .4s var(--bz); gap: 30px;
+}
+#nav-drawer.open { right: 0; }
+#nav-drawer a {
+  font-family: var(--fh); font-weight: 700; font-size: 1.3rem;
+  text-transform: uppercase; color: var(--tm); letter-spacing: -.01em;
+  transition: color .2s, transform .2s;
+}
+#nav-drawer a:hover { color: var(--tw); transform: translateX(8px); }
+
+/* ══════════════════════════════════════════════
+   SECTION TRANSITIONS – STAGGER
+══════════════════════════════════════════════ */
+section {
+  min-height: 100vh;
+  padding: calc(var(--nav-h) + 80px) 20px 100px;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  position: relative; opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity .7s var(--bz), transform .7s var(--bz);
+}
+section.in  { opacity: 1; transform: translateY(0) scale(1); }
+section.out { opacity: 0; transform: translateY(-20px); transition: opacity .4s, transform .4s; }
+
+/* Children stagger on enter */
+section.in .stagger-child {
+  animation: stagger-reveal var(--sd,.6s) var(--si,0s) var(--bz) both;
+}
+@keyframes stagger-reveal {
+  from { opacity:0; transform: translateY(30px) scale(0.95); filter: blur(8px); }
+  to   { opacity:1; transform: translateY(0) scale(1);      filter: blur(0); }
+}
+
+.container {
+  max-width: 1200px; width: 100%; margin: 0 auto; position: relative; z-index: 2;
+}
+
+/* ══════════════════════════════════════════════
+   BUTTONS
+══════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 16px 32px; background: var(--tw); color: var(--bg);
+  font-family: var(--fh); font-weight: 700; font-size: .9rem;
+  text-transform: uppercase; letter-spacing: .04em; border-radius: 4px;
+  border: none; transition: all .3s var(--bz); position: relative; overflow: hidden;
+}
+.btn::before {
+  content: ''; position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.15), transparent);
+  transition: .5s;
+}
+.btn:hover::before { left: 100%; }
+.btn:hover {
+  transform: scale(1.04) translateY(-2px);
+  box-shadow: 0 0 30px rgba(255,255,255,0.3);
+}
+.btn-outline {
+  background: transparent; color: var(--tw);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+.btn-outline:hover {
+  border-color: var(--tw);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.08);
+}
+.hover-card { transition: all .3s var(--bz); }
+.hover-card:hover { transform: scale(1.02) translateY(-6px); box-shadow: 0 20px 50px rgba(255,255,255,0.07); }
+
+/* Vibration on hover */
+@keyframes vibrate {
+  0%,100%{transform:translateX(0) scale(1.04) translateY(-2px)}
+  25%    {transform:translateX(-2px) scale(1.04) translateY(-2px)}
+  75%    {transform:translateX(2px) scale(1.04) translateY(-2px)}
+}
+.btn:hover { animation: vibrate .12s ease-in-out 2; }
+
+/* ══════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════ */
+#hero { text-align: center; perspective: 1000px; }
+
+.hero-badge {
+  display: inline-block; padding: 8px 20px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 100px; font-size: .85rem; margin-bottom: 40px;
+  animation: fade-up 1s .3s both, float 5s ease-in-out 1.3s infinite;
+  backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); color: var(--tl);
+}
+@keyframes fade-up { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes float   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+.hero-title {
+  font-size: clamp(2.8rem, 7vw, 6rem); line-height: 1.05; margin-bottom: 28px;
+  background: linear-gradient(to right, #555, #FFF 40%, #FFF 60%, #555);
+  background-size: 200% auto; color: transparent;
+  -webkit-background-clip: text; background-clip: text;
+  opacity: 0; animation: hero-reveal 2.5s var(--bz) .2s forwards;
+  transform-style: preserve-3d; transition: transform .1s ease-out;
+}
+@keyframes hero-reveal {
+  0%  {opacity:0;filter:blur(20px);transform:scale(0.88) translateY(40px);background-position:200% center}
+  40% {opacity:1}
+  100%{opacity:1;filter:blur(0);transform:scale(1) translateY(0);background-position:0% center}
+}
+#hero p {
+  font-size: clamp(1.05rem, 2vw, 1.25rem); max-width: 780px;
+  margin: 0 auto 50px; opacity: 0; animation: fade-up 1s 1s both;
+  line-height: 1.7; color: var(--tl);
+}
+.hero-btns {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  opacity: 0; animation: fade-up 1s 1.2s both;
+}
+.hero-stats {
+  display: flex; justify-content: center; gap: 60px; margin-top: 80px;
+  opacity: 0; animation: fade-up 1s 1.5s both; flex-wrap: wrap;
+}
+.hero-stat { text-align: center; }
+.hero-stat-n {
+  font-family: var(--fh); font-weight: 900; font-size: 2rem;
+  color: var(--tw); display: block; line-height: 1; margin-bottom: 6px;
+}
+.hero-stat-l { font-size: .8rem; color: var(--tm); text-transform: uppercase; letter-spacing: .1em; }
+
+/* ══════════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════════ */
+#about { text-align: center; }
+.about-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 60px;
+}
+.about-card {
+  background: rgba(10,10,10,0.6); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 36px 28px; text-align: left;
+  transition: all .3s var(--bz); transform-style: preserve-3d;
+}
+.about-card:hover {
+  border-color: rgba(255,255,255,0.15); transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+.about-card-icon {
+  width: 44px; height: 44px; fill: none; stroke: var(--tw);
+  stroke-width: 1.5; margin-bottom: 20px;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.2));
+}
+.about-card h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.about-card p  { font-size: .92rem; color: var(--tm); line-height: 1.7; }
+.counter-box {
+  margin-top: 60px; display: flex; justify-content: center;
+  gap: 80px; flex-wrap: wrap;
+}
+.counter-item { text-align: center; }
+.counter-num {
+  font-family: var(--fh); font-weight: 900; font-size: 3.5rem; color: var(--tw);
+  text-shadow: 0 0 40px rgba(255,255,255,0.2); display: block; line-height: 1;
+}
+.counter-label {
+  font-size: .8rem; color: var(--tm); text-transform: uppercase;
+  letter-spacing: .12em; margin-top: 8px;
+}
+
+/* ══════════════════════════════════════════════
+   PAIN POINTS
+══════════════════════════════════════════════ */
+#pain { padding-bottom: 80px; }
+.pain-intro { text-align: center; margin-bottom: 70px; }
+.pain-intro p { max-width: 600px; margin: 20px auto 0; color: var(--tm); font-size: 1.05rem; line-height: 1.6; }
+.pain-item {
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem); font-family: var(--fh); color: var(--tm);
+  margin-bottom: 28px; opacity: 0; transform: translateY(20px);
+  transition: all .4s ease; display: flex; align-items: center; gap: 18px;
+  cursor: none; padding: 20px 24px; border-radius: 8px; border: 1px solid transparent;
+}
+.pain-item.visible { opacity: 1; transform: translateY(0); }
+.pain-item:hover {
+  color: var(--tw); background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.08); transform: translateX(12px);
+  text-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+.pain-arrow {
+  opacity: 0; width: 0; transition: all .4s var(--bz); flex-shrink: 0;
+  stroke: var(--tw); fill: none; filter: drop-shadow(0 0 5px #fff);
+}
+.pain-item:hover .pain-arrow { opacity: 1; width: 30px; }
+
+/* ══════════════════════════════════════════════
+   MÉTODO SCALE
+══════════════════════════════════════════════ */
+#scale { text-align: center; }
+.scale-subtitle { margin-top: 12px; color: var(--tm); font-size: 1.05rem; }
+.scale-track {
+  position: relative; display: flex; justify-content: space-between; align-items: center;
+  max-width: 820px; margin: 70px auto 0; padding: 20px 0;
+}
+.scale-line {
+  position: absolute; top: 50%; left: 5%; right: 5%;
+  height: 1px; background: rgba(255,255,255,0.1); z-index: 1;
+}
+.scale-dot {
+  position: absolute; top: 50%; left: 5%; width: 10px; height: 10px;
+  background: var(--tw); border-radius: 50%; transform: translateY(-50%);
+  box-shadow: 0 0 20px 8px rgba(255,255,255,0.4); z-index: 2;
+  opacity: 0; transition: left .5s var(--bz), opacity .3s;
+}
+.scale-letter {
+  font-size: 2rem; font-family: var(--fh); font-weight: 900; color: var(--tm);
+  background: var(--bg); width: 72px; height: 72px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); z-index: 3;
+  cursor: none; transition: all .3s var(--bz), transform .2s; position: relative;
+  transform-style: preserve-3d;
+}
+.scale-letter:hover {
+  color: var(--tw); border-color: rgba(255,255,255,0.5);
+  transform: scale(1.15) rotateX(15deg) rotateY(10deg);
+  box-shadow: 0 0 30px rgba(255,255,255,0.12);
+}
+.scale-letter.active {
+  color: var(--tw); border-color: rgba(255,255,255,0.5);
+  transform: scale(1.15); box-shadow: 0 0 30px rgba(255,255,255,0.12);
+}
+.rocket-flash {
+  position: fixed; inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.85) 0%, transparent 60%);
+  z-index: 19; pointer-events: none;
+  animation: flash-out .6s ease-out forwards;
+}
+@keyframes flash-out {
+  0%  {opacity:0;transform:scale(0.3)}
+  40% {opacity:1;transform:scale(1.1)}
+  100%{opacity:0;transform:scale(2)}
+}
+
+.scale-display {
+  max-width: 820px; margin: 30px auto 0; min-height: 130px;
+  background: rgba(10,10,10,0.7); padding: 32px 36px; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06); font-size: 1.05rem; line-height: 1.7;
+  text-align: left; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.scale-display-inner { animation: slide-in .4s var(--bz) forwards; }
+@keyframes slide-in { from{opacity:0;transform:translateX(-25px)} to{opacity:1;transform:translateX(0)} }
+
+/* ══════════════════════════════════════════════
+   RESULTADOS REALES
+══════════════════════════════════════════════ */
+#results { text-align: center; }
+.results-intro {
+  max-width: 700px; margin: 20px auto 0; color: var(--tm);
+  font-size: 1.05rem; line-height: 1.6;
+}
+.results-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px; margin-top: 60px; width: 100%; text-align: left;
+}
+.result-card {
+  background: rgba(10,10,10,0.7); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); padding: 36px 30px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06); position: relative; overflow: hidden;
+  transition: all .3s var(--bz);
+}
+.result-card::before {
+  content: ''; position: absolute; top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  transform: skewX(-20deg); transition: .8s;
+}
+.result-card:hover::before { left: 200%; }
+.result-card:hover { border-color: rgba(255,255,255,0.2); box-shadow: 0 20px 60px rgba(255,255,255,0.06); transform: translateY(-6px); }
+.result-tag {
+  display: inline-block; padding: 4px 14px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 100px; font-size: .75rem; color: var(--tl);
+  text-transform: uppercase; letter-spacing: .1em; margin-bottom: 18px; font-family: var(--fh);
+}
+.result-card-icon {
+  width: 42px; height: 42px; fill: none; stroke: var(--tw); stroke-width: 1.5;
+  margin-bottom: 18px; filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+}
+.result-card h3 { font-size: 1.3rem; margin-bottom: 14px; }
+.result-card p  { font-size: .92rem; color: var(--tm); line-height: 1.75; margin-bottom: 24px; }
+.result-metrics {
+  display: flex; gap: 20px; flex-wrap: wrap;
+  padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.result-metric { text-align: left; }
+.result-metric-n {
+  font-family: var(--fh); font-weight: 800; font-size: 1.4rem; color: var(--tw);
+  display: block; line-height: 1; margin-bottom: 4px;
+}
+.result-metric-l { font-size: .75rem; color: var(--tm); text-transform: uppercase; letter-spacing: .08em; }
+.result-chart { width: 100%; height: 70px; margin-top: 20px; overflow: visible; }
+.chart-path {
+  fill: none; stroke: var(--tw); stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 400; stroke-dashoffset: 400;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.5));
+  transition: stroke-dashoffset 1.2s var(--bz);
+}
+/* Draw on scroll + hover */
+.chart-path.drawn { stroke-dashoffset: 0; }
+.result-card:hover .chart-path { stroke-dashoffset: 0; }
+
+/* ══════════════════════════════════════════════
+   DIAGNÓSTICO
+══════════════════════════════════════════════ */
+#survey { padding-top: 100px; }
+.survey-box {
+  background: var(--pn); padding: 60px 55px; border-radius: 16px;
+  max-width: 820px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+.survey-header { margin-bottom: 10px; }
+.survey-header p { color: var(--tm); font-size: 1.05rem; margin-top: 12px; line-height: 1.6; }
+.progress-wrap { margin: 32px 0 36px; }
+.progress-track {
+  height: 4px; background: var(--cd); border-radius: 2px; overflow: hidden;
+}
+.progress-bar {
+  height: 100%; background: var(--tw); width: 0%;
+  transition: width .5s var(--bz); box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+.progress-label { font-size: .8rem; color: var(--tm); margin-top: 10px; font-family: var(--fh); }
+.question-block { display: none; }
+.question-block.active { display: block; animation: slide-in .4s var(--bz); }
+.question-block h3 {
+  font-size: 1.2rem; line-height: 1.4; margin-bottom: 28px; font-weight: 600;
+  text-transform: none; letter-spacing: 0;
+}
+.options-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.option-btn {
+  background: transparent; border: 1px solid rgba(255,255,255,0.12);
+  color: var(--tw); padding: 16px 22px; border-radius: 8px; text-align: left;
+  font-size: 1rem; transition: all .2s; display: flex;
+  justify-content: space-between; align-items: center; line-height: 1.4;
+}
+.option-btn:hover {
+  border-color: rgba(255,255,255,0.35); background: rgba(255,255,255,0.04);
+  transform: translateX(5px);
+}
+.option-btn.selected {
+  background: rgba(255,255,255,0.12); border-color: var(--tw);
+  box-shadow: 0 0 15px rgba(255,255,255,0.08);
+}
+.check-icon {
+  opacity: 0; transform: scale(0); transition: all .3s var(--bz);
+  width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: var(--tw);
+  stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.option-btn.selected .check-icon { opacity: 1; transform: scale(1); }
+.survey-actions { margin-top: 36px; text-align: right; }
+#diag-result {
+  display: none; margin-top: 36px; padding: 36px;
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.04), transparent);
+}
+.diag-result-reveal { animation: bounce-in .7s var(--bz) forwards; }
+@keyframes bounce-in {
+  0%  {opacity:0;transform:translateY(40px) scale(0.9)}
+  60% {opacity:1;transform:translateY(-8px) scale(1.01)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+.diag-profile {
+  display: inline-block; padding: 5px 16px;
+  border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+  font-size: .8rem; font-family: var(--fh); font-weight: 600;
+  text-transform: uppercase; letter-spacing: .08em; margin-bottom: 20px; color: var(--tl);
+}
+#diag-result h3 {
+  font-size: 1.4rem; margin-bottom: 16px; text-shadow: 0 0 20px rgba(255,255,255,0.2);
+  text-transform: none; letter-spacing: -.01em;
+}
+#diag-text { line-height: 1.85; font-size: 1.02rem; color: var(--tl); margin-bottom: 30px; }
+.diag-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Btn diagnóstico flash */
+@keyframes btn-flash {
+  0%,100%{box-shadow:0 0 0 rgba(255,255,255,0)}
+  50%    {box-shadow:0 0 40px rgba(255,255,255,0.6)}
+}
+.btn-flash { animation: btn-flash .4s ease-in-out 2; }
+
+/* ══════════════════════════════════════════════
+   PAQUETES
+══════════════════════════════════════════════ */
+#packages { text-align: center; }
+.packages-intro {
+  max-width: 680px; margin: 20px auto 0; color: var(--tm);
+  font-size: 1.05rem; line-height: 1.6;
+}
+.packages-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px; margin-top: 60px; width: 100%; text-align: left;
+}
+.package-card {
+  background: var(--pn); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 36px 28px;
+  display: flex; flex-direction: column;
+  transition: all .3s var(--bz); position: relative; overflow: hidden;
+}
+.package-card.featured { border-color: rgba(255,255,255,0.25); background: rgba(20,20,20,0.9); }
+.package-card.featured::before {
+  content: 'MÁS POPULAR'; position: absolute; top: 16px; right: -28px;
+  background: var(--tw); color: var(--bg); font-family: var(--fh);
+  font-size: .65rem; font-weight: 800; letter-spacing: .1em;
+  padding: 5px 40px; transform: rotate(45deg);
+}
+.package-card:hover {
+  border-color: rgba(255,255,255,0.2); transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+
+/* Package tip */
+.pkg-tip {
+  font-size: .75rem; color: var(--tm); margin-bottom: 12px;
+  display: flex; align-items: flex-start; gap: 6px; line-height: 1.4;
+}
+.pkg-tip-icon { color: var(--tw); flex-shrink: 0; }
+
+.package-name { font-size: 1.1rem; letter-spacing: -.01em; margin-bottom: 6px; }
+.package-price {
+  font-size: 2rem; font-family: var(--fh); font-weight: 800; color: var(--tw);
+  margin: 14px 0 4px; text-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+.package-reach { font-size: .82rem; color: var(--tm); margin-bottom: 8px; }
+.package-roi {
+  font-size: .85rem; color: var(--tl); padding: 10px 14px;
+  background: rgba(255,255,255,0.04); border-left: 2px solid rgba(255,255,255,0.2);
+  border-radius: 0 4px 4px 0; margin-bottom: 24px; line-height: 1.5;
+}
+.package-features { flex-grow: 1; margin-bottom: 28px; }
+.package-features li {
+  margin-bottom: 12px; color: var(--tm); display: flex;
+  align-items: flex-start; gap: 10px; font-size: .9rem; line-height: 1.5;
+}
+.package-features li::before { content: '→'; color: var(--tw); font-weight: 700; flex-shrink: 0; }
+.package-btns { display: flex; gap: 10px; }
+.package-btns .btn { flex: 1; padding: 13px 20px; font-size: .82rem; }
+
+/* ══════════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════════ */
+#faq { text-align: center; }
+.faq-list { max-width: 820px; margin: 60px auto 0; width: 100%; text-align: left; }
+.faq-item { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.faq-question {
+  width: 100%; text-align: left; background: none; border: none; color: var(--tw);
+  font-family: var(--fh); font-size: 1.1rem; padding: 28px 0;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 20px; transition: all .3s; letter-spacing: -.01em; text-transform: none;
+}
+.faq-question:hover { color: var(--tw); text-shadow: 0 0 15px rgba(255,255,255,0.3); transform: translateX(6px); }
+.faq-icon {
+  transition: transform .5s var(--bz); width: 22px; height: 22px;
+  flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 2;
+}
+.faq-item.active .faq-icon { transform: rotate(180deg); filter: drop-shadow(0 0 5px #fff); }
+.faq-answer-wrap { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--bz); }
+.faq-item.active .faq-answer-wrap { grid-template-rows: 1fr; }
+.faq-answer { overflow: hidden; }
+.faq-answer-inner {
+  padding-bottom: 28px; color: var(--tm); line-height: 1.8; font-size: 1rem;
+  opacity: 0; transform: scaleY(0.8); transform-origin: top;
+  transition: all .5s var(--bz);
+}
+.faq-item.active .faq-answer-inner { transform: scaleY(1); opacity: 1; }
+.faq-answer-inner strong { color: var(--tl); font-weight: 600; }
+
+/* ══════════════════════════════════════════════
+   CTA FINAL
+══════════════════════════════════════════════ */
+#cta { text-align: center; }
+#cta h2 { font-size: clamp(2.5rem, 5.5vw, 4.8rem); line-height: 1.05; margin-bottom: 28px; text-shadow: 0 0 40px rgba(255,255,255,0.15); }
+#cta .cta-sub { font-size: 1.2rem; color: var(--tm); max-width: 680px; margin: 0 auto 50px; line-height: 1.65; }
+.cta-guarantee {
+  margin-top: 28px; font-size: .9rem; color: var(--tm);
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.cta-guarantee::before { content: '✓'; color: var(--tl); font-weight: 700; }
+
+/* ══════════════════════════════════════════════
+   CARRITO
+══════════════════════════════════════════════ */
+#cart {
+  position: fixed; top: 0; right: -520px; width: 100%; max-width: 520px;
+  height: 100vh; background: rgba(8,8,8,0.97); backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); border-left: 1px solid rgba(255,255,255,0.08);
+  z-index: 1000; padding: 40px; display: flex; flex-direction: column;
+  transition: right .5s var(--bz); box-shadow: -30px 0 80px rgba(0,0,0,0.8);
+}
+#cart.open { right: 0; }
+.cart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
+.cart-close { background: none; border: none; color: var(--tw); font-size: 2.2rem; line-height: 1; transition: transform .3s; }
+.cart-close:hover { transform: rotate(90deg) scale(1.2); }
+.cart-items { flex-grow: 1; overflow-y: auto; padding-right: 8px; }
+.cart-items::-webkit-scrollbar { width: 4px; }
+.cart-items::-webkit-scrollbar-thumb { background: var(--cd); border-radius: 2px; }
+.cart-item {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+  animation: slide-in .3s ease;
+}
+.cart-item-name { font-size: 1rem; font-weight: 500; margin-bottom: 4px; }
+.cart-item-price { color: var(--tm); font-size: .9rem; }
+.cart-remove {
+  background: none; border: none; color: #e05555; font-size: .82rem;
+  text-decoration: underline; transition: color .2s; cursor: none; padding: 0;
+  white-space: nowrap; margin-left: 16px; flex-shrink: 0;
+}
+.cart-remove:hover { color: #ff3333; }
+.cart-footer { margin-top: 20px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); }
+.cart-discount-label {
+  display: flex; gap: 12px; align-items: center; margin-bottom: 24px;
+  font-size: 1rem; cursor: none;
+}
+.cart-discount-label input { width: 20px; height: 20px; accent-color: var(--tw); cursor: none; flex-shrink: 0; }
+.cart-total { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px; }
+.cart-total-label { font-size: 1rem; color: var(--tm); }
+.cart-total-value { font-family: var(--fh); font-weight: 800; font-size: 1.9rem; color: var(--tw); }
+.cart-total-original { font-size: .85rem; color: var(--tm); text-decoration: line-through; margin-left: 8px; }
+.cart-empty { text-align: center; color: var(--tm); padding: 60px 20px; }
+.cart-empty-icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.4; }
+
+/* ══════════════════════════════════════════════
+   STICKY CART BTN
+══════════════════════════════════════════════ */
+#sticky-cart {
+  position: fixed; bottom: 30px; right: 30px; z-index: 900;
+  opacity: 0; transform: translateY(20px); transition: all .5s var(--bz);
+  pointer-events: none; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+#sticky-cart.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+/* ══════════════════════════════════════════════
+   MODAL (Legal)
+══════════════════════════════════════════════ */
+#modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 2000;
+  display: none; align-items: center; justify-content: center; padding: 20px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+#modal-overlay.open { display: flex; }
+.modal-box {
+  background: var(--pn); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;
+  padding: 48px 44px; max-width: 740px; width: 100%; max-height: 85vh;
+  overflow-y: auto; position: relative; animation: modal-in .4s var(--bz);
+}
+@keyframes modal-in { from{opacity:0;transform:scale(0.92) translateY(20px)} to{opacity:1;transform:scale(1) translateY(0)} }
+.modal-close {
+  position: absolute; top: 20px; right: 20px; background: none; border: none;
+  color: var(--tw); font-size: 1.8rem; line-height: 1; transition: transform .3s; cursor: none;
+}
+.modal-close:hover { transform: rotate(90deg); }
+.modal-box h2 { font-size: 1.5rem; margin-bottom: 28px; text-transform: none; letter-spacing: -.01em; }
+.modal-box p, .modal-box li { color: var(--tm); line-height: 1.8; font-size: .95rem; margin-bottom: 16px; }
+.modal-box h3 { font-size: 1rem; margin: 28px 0 10px; text-transform: none; }
+.modal-box ul { padding-left: 20px; }
+.modal-box ul li { list-style: disc; }
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer {
+  padding: 80px 20px 50px; text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-size: .88rem; color: var(--tm);
+}
+footer .footer-brand {
+  font-family: var(--fh); font-weight: 900; font-size: 1.4rem; color: var(--tw);
+  text-transform: uppercase; letter-spacing: -.02em; margin-bottom: 8px;
+}
+footer .footer-tagline { color: var(--tm); margin-bottom: 32px; font-size: .9rem; }
+footer .footer-links { display: flex; justify-content: center; gap: 30px; margin-bottom: 24px; flex-wrap: wrap; }
+footer .footer-links a { transition: color .2s; }
+footer .footer-links a:hover { color: var(--tw); }
+footer .footer-copy { color: rgba(255,255,255,0.2); font-size: .8rem; margin-top: 20px; }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 16px; } }
+@media (max-width: 768px) {
+  section { padding: calc(var(--nav-h) + 60px) 20px 80px; }
+  .nav-links { display: none; }
+  .nav-cta.desktop { display: none; }
+  .hamburger { display: flex; }
+  #navbar { padding: 0 24px; }
+  .hero-stats { gap: 36px; }
+  .hero-stat-n { font-size: 1.6rem; }
+  .scale-track { flex-direction: column; gap: 16px; }
+  .scale-line { width: 2px; height: 85%; top: 8%; left: 50%; transform: translateX(-50%); }
+  .scale-dot { top: 10%; left: 50%; transform: translate(-50%, 0); transition: top .4s var(--bz); }
+  .survey-box { padding: 36px 22px; }
+  #cart { width: 100%; max-width: 100%; right: -100%; }
+  #cart.open { right: 0; }
+  .modal-box { padding: 32px 22px; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .counter-box { gap: 40px; }
+  .diag-actions { flex-direction: column; }
+  .diag-actions .btn { width: 100%; justify-content: center; }
+  #cursor-dot, #cursor-ring { display: none; }
+  body { cursor: default; }
+  button, a { cursor: pointer; }
+}
+@media (max-width: 480px) {
+  .hero-btns { flex-direction: column; align-items: center; }
+  .hero-btns .btn { width: 100%; max-width: 320px; justify-content: center; }
+  .scale-letter { width: 58px; height: 58px; font-size: 1.6rem; }
+  .results-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════
+   ACCESSIBILITY
+══════════════════════════════════════════════ */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+:focus-visible { outline: 2px solid rgba(255,255,255,0.6); outline-offset: 3px; border-radius: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- STAR FIELD - 3 layers -->
+<div id="star-field" aria-hidden="true"></div>
+
+<!-- Grid parallax -->
+<div id="grid" aria-hidden="true"></div>
+
+<!-- Cursor glow -->
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- Section color overlay -->
+<div id="section-overlay" aria-hidden="true"></div>
+
+<!-- Toast container -->
+<div id="toast-container" aria-live="polite" aria-label="Notificaciones"></div>
+
+<!-- Marketing tip notification -->
+<div id="marketing-tip" aria-hidden="true">
+  <div class="mt-icon" id="mt-icon">💡</div>
+  <div class="mt-text" id="mt-text">Cargando tip de marketing...</div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#hero" class="nav-logo" aria-label="Kovex Agency - Inicio">KOVEX<span>.</span></a>
+  <div class="nav-links" role="menubar">
+    <a href="#about"    role="menuitem">Nosotros</a>
+    <a href="#scale"    role="menuitem">Método</a>
+    <a href="#results"  role="menuitem">Resultados</a>
+    <a href="#packages" role="menuitem">Paquetes</a>
+    <a href="#faq"      role="menuitem">FAQ</a>
+  </div>
+  <a href="#" onclick="wa(); return false;" class="nav-cta desktop" aria-label="Contactar por WhatsApp">WhatsApp →</a>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-drawer">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav id="nav-drawer" aria-label="Menú móvil" aria-hidden="true">
+  <a href="#about"    onclick="closeDrawer()">Nosotros</a>
+  <a href="#scale"    onclick="closeDrawer()">Método SCALE</a>
+  <a href="#results"  onclick="closeDrawer()">Resultados</a>
+  <a href="#survey"   onclick="closeDrawer()">Diagnóstico</a>
+  <a href="#packages" onclick="closeDrawer()">Paquetes</a>
+  <a href="#faq"      onclick="closeDrawer()">FAQ</a>
+  <a href="#" onclick="wa(); closeDrawer(); return false;" style="color:var(--tw);margin-top:10px;">Contactar por WhatsApp →</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero" aria-label="Inicio">
+  <div class="container">
+    <div class="hero-badge" aria-label="Resultados generados">
+      +2.3M reproducciones · +15K interacciones · +847 seguidores reales
+    </div>
+    <h1 class="hero-title" id="hero-title">
+      Crecimiento Real,<br>No Seguidores Vacíos
+    </h1>
+    <p>En KOVEX construimos presencia digital que convierte visitas en clientes, reproducciones en pedidos, y seguidores en ventas reales. Sin humo, sin promesas vacías.</p>
+    <div class="hero-btns">
+      <button class="btn" onclick="scrollToSection('survey')" aria-label="Ir al diagnóstico gratuito">Diagnóstico gratis →</button>
+      <button class="btn btn-outline" onclick="scrollToSection('scale')" aria-label="Conocer el método SCALE">Conoce el método</button>
+    </div>
+    <div class="hero-stats" role="list" aria-label="Estadísticas">
+      <div class="hero-stat" role="listitem"><span class="hero-stat-n" id="hs-repro">+0</span><span class="hero-stat-l">Reproducciones</span></div>
+      <div class="hero-stat" role="listitem"><span class="hero-stat-n" id="hs-seg">+0</span><span class="hero-stat-l">Seguidores reales</span></div>
+      <div class="hero-stat" role="listitem"><span class="hero-stat-n" id="hs-cons">+0%</span><span class="hero-stat-l">Más consultas</span></div>
+      <div class="hero-stat" role="listitem"><span class="hero-stat-n">4 días</span><span class="hero-stat-l">Para ver resultados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" aria-label="Sobre Kovex Agency">
+  <div class="container">
+    <h2 style="text-align:center" class="stagger-child" style="--si:0s">Somos KOVEX</h2>
+    <p class="stagger-child" style="--si:.1s;text-align:center;max-width:780px;margin:24px auto 0;font-size:1.1rem;line-height:1.75;color:var(--tl)">
+      No creemos en los seguidores inflados ni en los trends que no tienen nada que ver con tu negocio. Creemos en marcas con alma, con consistencia, con contenido que conecta de verdad con quien tiene la billetera lista para comprarte. Somos el equipo que transforma la improvisación en resultados medibles.
+    </p>
+    <div class="about-grid">
+      <div class="about-card stagger-child" style="--si:.15s">
+        <svg class="about-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <h3>Estrategia, no improvisación</h3>
+        <p>Cada pieza de contenido tiene un propósito. Antes de crear, analizamos a tu cliente, tu competencia y tu mercado para definir exactamente qué decir y cómo decirlo.</p>
+      </div>
+      <div class="about-card stagger-child" style="--si:.25s">
+        <svg class="about-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        <h3>Resultados medibles</h3>
+        <p>Nada de "likes bonitos". Te entregamos dashboards con datos reales: alcance, interacciones, clicks, consultas generadas y retorno sobre inversión publicitaria.</p>
+      </div>
+      <div class="about-card stagger-child" style="--si:.35s">
+        <svg class="about-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <h3>Equipo comprometido</h3>
+        <p>No eres un cliente más en una cartera de 50. Te asignamos un equipo dedicado que aprende tu negocio, tu tono y tus objetivos desde el primer día.</p>
+      </div>
+    </div>
+    <div class="counter-box stagger-child" style="--si:.45s" role="list" aria-label="Números de Kovex Agency">
+      <div class="counter-item" role="listitem"><span class="counter-num" id="cnt-brands">0</span><div class="counter-label">Marcas transformadas</div></div>
+      <div class="counter-item" role="listitem"><span class="counter-num" id="cnt-repro">0</span><div class="counter-label">Reproducciones generadas</div></div>
+      <div class="counter-item" role="listitem"><span class="counter-num" id="cnt-years">0</span><div class="counter-label">Años de experiencia</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PAIN POINTS ══ -->
+<section id="pain" aria-label="Problemas comunes en marketing digital">
+  <div class="container">
+    <div class="pain-intro stagger-child" style="--si:0s">
+      <h2>¿Te identificas?</h2>
+      <p>Si alguna de estas situaciones describe tu negocio hoy, estás en el lugar correcto.</p>
+    </div>
+    <div id="pain-list" role="list" aria-label="Síntomas de una estrategia digital sin rumbo"></div>
+  </div>
+</section>
+
+<!-- ══ MÉTODO SCALE ══ -->
+<section id="scale" aria-label="Método SCALE de Kovex Agency">
+  <div class="container">
+    <h2 class="stagger-child" style="--si:0s">El Método SCALE</h2>
+    <p class="scale-subtitle stagger-child" style="--si:.1s">Nuestro sistema probado en 5 fases para transformar tu presencia digital.</p>
+    <div class="scale-track stagger-child" style="--si:.2s" id="scale-track" role="tablist" aria-label="Fases del método SCALE">
+      <div class="scale-line" aria-hidden="true"></div>
+      <div class="scale-dot" id="scale-dot" aria-hidden="true"></div>
+      <div class="scale-letter" role="tab" aria-selected="false" aria-controls="scale-display" data-letter="S" data-index="0" tabindex="0"><span>S</span></div>
+      <div class="scale-letter" role="tab" aria-selected="false" data-letter="C" data-index="1" tabindex="0"><span>C</span></div>
+      <div class="scale-letter" role="tab" aria-selected="false" data-letter="A" data-index="2" tabindex="0"><span>A</span></div>
+      <div class="scale-letter" role="tab" aria-selected="false" data-letter="L" data-index="3" tabindex="0"><span>L</span></div>
+      <div class="scale-letter" role="tab" aria-selected="false" data-letter="E" data-index="4" tabindex="0"><span>E</span></div>
+    </div>
+    <div class="scale-display stagger-child" style="--si:.3s" id="scale-display" role="tabpanel" aria-live="polite">
+      <div class="scale-display-inner" style="color:var(--tm)">Haz clic en cualquier letra para descubrir cada fase de nuestra metodología.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RESULTADOS ══ -->
+<section id="results" aria-label="Casos de éxito de Kovex Agency">
+  <div class="container">
+    <h2 class="stagger-child" style="--si:0s">Resultados Reales</h2>
+    <p class="results-intro stagger-child" style="--si:.1s">No prometemos, demostramos. Estos son algunos de los resultados generados para nuestros clientes en Cartago y el Valle del Cauca.</p>
+    <div class="results-grid" id="results-grid"></div>
+  </div>
+</section>
+
+<!-- ══ DIAGNÓSTICO ══ -->
+<section id="survey" aria-label="Diagnóstico digital gratuito">
+  <div class="container">
+    <div class="survey-box">
+      <div class="survey-header">
+        <h2>Diagnóstico Profundo</h2>
+        <p>6 preguntas clave para generar un análisis estratégico real y personalizado para tu negocio.</p>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar-wrap">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="progress-label" id="progress-label">Pregunta 1 de 6</div>
+      </div>
+      <div id="survey-questions"></div>
+      <div class="survey-actions">
+        <button class="btn" id="btn-diag" style="display:none" onclick="generateDiag()" aria-label="Generar mi diagnóstico personalizado">
+          Generar mi diagnóstico →
+        </button>
+      </div>
+      <div id="diag-result" role="region" aria-live="polite" aria-label="Resultado del diagnóstico">
+        <div class="diag-profile" id="diag-profile-tag"></div>
+        <h3 id="diag-title"></h3>
+        <p id="diag-text"></p>
+        <div class="diag-actions">
+          <button class="btn" id="btn-ver-paquete" onclick="scrollToSection('packages')" aria-label="Ver paquetes recomendados">Ver paquetes recomendados →</button>
+          <button class="btn btn-outline" onclick="wa()" aria-label="Hablar con un estratega por WhatsApp">Hablar con un estratega</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PAQUETES ══ -->
+<section id="packages" aria-label="Paquetes y servicios de Kovex Agency">
+  <div class="container">
+    <h2 style="text-align:center" class="stagger-child" style="--si:0s">Nuestros Paquetes</h2>
+    <p class="packages-intro stagger-child" style="--si:.1s">Soluciones escalables para cada etapa de tu negocio. Sin contratos largos, sin letras pequeñas.</p>
+    <div class="packages-grid" id="packages-grid"></div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section id="faq" aria-label="Preguntas frecuentes">
+  <div class="container">
+    <h2 style="text-align:center" class="stagger-child" style="--si:0s">Preguntas Frecuentes</h2>
+    <div class="faq-list" id="faq-list" role="list"></div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta" aria-label="Llamada a la acción final">
+  <div class="container">
+    <h2 class="stagger-child" style="--si:0s">Deja de apostar.<br>Empieza a construir.</h2>
+    <p class="cta-sub stagger-child" style="--si:.1s">
+      Cuéntanos sobre tu negocio y te decimos exactamente qué está fallando y qué hacer para que tus redes generen ventas reales.
+    </p>
+    <button class="btn hover-card stagger-child" style="--si:.2s;font-size:1.05rem;padding:20px 44px" onclick="wa()" aria-label="Solicitar diagnóstico gratuito por WhatsApp">
+      Solicita tu diagnóstico sin compromiso →
+    </button>
+    <p class="cta-guarantee stagger-child" style="--si:.3s">
+      Sin compromiso. Sin presión. Solo una conversación honesta sobre cómo hacer crecer tu negocio.
+    </p>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-brand">KOVEX AGENCY</div>
+    <div class="footer-tagline">Arquitectura de Crecimiento Digital</div>
+    <nav class="footer-links" aria-label="Links del footer">
+      <a href="#about">Nosotros</a>
+      <a href="#scale">Método</a>
+      <a href="#results">Resultados</a>
+      <a href="#packages">Paquetes</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" onclick="openModal('terms'); return false;">Términos y condiciones</a>
+      <a href="#" onclick="openModal('privacy'); return false;">Política de privacidad</a>
+    </nav>
+    <p style="margin-bottom:8px">
+      Cartago, Valle del Cauca, Colombia &nbsp;·&nbsp;
+      <a href="tel:+573133853506" style="transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''" aria-label="Llamar a Kovex Agency">+57 313 385 3506</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:hola@kovexagency.com" style="transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''" aria-label="Enviar email a Kovex Agency">hola@kovexagency.com</a>
+    </p>
+    <p>CEO: Nicol Montoya</p>
+    <p class="footer-copy">© 2026 Kovex Agency. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ══ CARRITO ══ -->
+<aside id="cart" role="complementary" aria-label="Carrito de selección" aria-hidden="true">
+  <div class="cart-header">
+    <h3 style="font-size:1.4rem">Tu Selección</h3>
+    <button class="cart-close" onclick="toggleCart()" aria-label="Cerrar carrito">×</button>
+  </div>
+  <div class="cart-items" id="cart-items" role="list"></div>
+  <div class="cart-footer">
+    <label class="cart-discount-label">
+      <input type="checkbox" id="discount-check" onchange="updateCart()" aria-label="Aplicar descuento del 20% para primera compra">
+      <span>Aplicar 20% de descuento (primera compra)</span>
+    </label>
+    <div class="cart-total">
+      <span class="cart-total-label">Total estimado:</span>
+      <div>
+        <span class="cart-total-value" id="cart-total-value">$0</span>
+        <span class="cart-total-original" id="cart-total-original" style="display:none"></span>
+      </div>
+    </div>
+    <button class="btn" style="width:100%;font-size:1rem;padding:18px" onclick="wa()" aria-label="Completar solicitud por WhatsApp">
+      Completar solicitud por WhatsApp →
+    </button>
+  </div>
+</aside>
+
+<button class="btn" id="sticky-cart" onclick="toggleCart()" aria-label="Ver carrito" aria-live="polite">
+  🛒 Ver carrito (<span id="cart-count">0</span>)
+</button>
+
+<!-- ══ MODAL LEGAL ══ -->
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-label="Información legal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">×</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════
+   DATOS DE CONTENIDO
+═══════════════════════════════════════════ */
+const WHATSAPP = '573133853506';
+
+const painPoints = [
+  { icon: '<path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>', text: 'Publicas constantemente pero los pedidos no llegan. El esfuerzo no se traduce en ventas.' },
+  { icon: '<path d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>', text: 'Te subes a trends virales sin relación con tu negocio. Suma reproducciones, pero nadie escribe.' },
+  { icon: '<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>', text: 'Tienes seguidores que no interactúan ni compran, y no sabes por qué tu comunidad está muerta.' },
+  { icon: '<path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>', text: 'Sin estrategia clara, las redes son ruido costoso que no llena la caja registradora.' }
+];
+
+const scaleData = [
+  { letter: 'S', title: 'Strategy — Diagnóstico y Mapa de Ruta', desc: 'Analizamos a tu cliente ideal en profundidad: qué le duele, qué desea, cómo decide, dónde está. Definimos los mensajes exactos que lo mueven a la acción y el canal donde tiene más sentido encontrarlo. Sin estrategia, el contenido más bonito es ruido.' },
+  { letter: 'C', title: 'Content — Producción que Conecta', desc: 'Creamos piezas visuales y textuales que no solo se ven bien, sino que generan acción inmediata. Guiones con hooks potentes, edición dinámica, gráficas con identidad. Cada pieza tiene un objetivo claro: vender, generar consulta o construir confianza.' },
+  { letter: 'A', title: 'Activation — Lanzamiento y Distribución', desc: 'Lanzamos campañas de alto impacto que llevan tu contenido a quienes realmente quieren comprarte. Meta Ads, distribución orgánica estratégica, colaboraciones y timing preciso para maximizar el alcance en el momento correcto.' },
+  { letter: 'L', title: 'Learning — Datos, No Suposiciones', desc: 'Medimos absolutamente todo: cada click, cada reproducción, cada consulta. Identificamos qué funciona, qué no y por qué. Los datos guían cada decisión para que tu inversión sea cada vez más eficiente y predecible.' },
+  { letter: 'E', title: 'Expansion — Escalar lo que Funciona', desc: 'Una vez identificadas las palancas de crecimiento, las amplificamos. Aumentamos presupuesto en lo que convierte, replicamos formatos ganadores y abrimos nuevos canales. El objetivo es convertir tus redes en un activo que crece solo.' }
+];
+
+const resultsData = [
+  { tag: 'Caso de éxito', icon: '<path d="M2 20h20M5 20V10a2 2 0 012-2h2a2 2 0 012 2v10m4 0V4a2 2 0 012-2h2a2 2 0 012 2v16"/>', title: 'Origen Café', desc: 'Video promocional de tostones con Meta Ads. Inversión de $20.000 COP. En tan solo 4 días el negocio recibió 30 pedidos por WhatsApp, 10 visitas al local y más de 15.000 reproducciones orgánicas adicionales.', metrics: [{n:'$20K',l:'Inversión en Ads'},{n:'+15K',l:'Reproducciones'},{n:'30',l:'Pedidos WhatsApp'},{n:'4 días',l:'Para ver resultados'}], path: 'M0,35 Q20,35 30,20 T60,25 T100,5' },
+  { tag: 'Branding desde cero', icon: '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>', title: 'Vanessa Puccini', desc: 'Creación de marca desde cero: logo, branding completo, piezas gráficas, gestión de redes y contenido estratégico alineado con su cliente ideal. El primer mes cerró con un 30% más de consultas y reconocimiento notorio en su zona.', metrics: [{n:'+30%',l:'Más consultas'},{n:'1 mes',l:'Para ver resultados'},{n:'100%',l:'Branding creado'}], path: 'M0,30 L20,25 L40,30 L60,15 L80,20 L100,0' },
+  { tag: 'Estrategia integral', icon: '<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>', title: 'Álamos Gastropub', desc: 'Reestructuración integral: nuevo branding, menú digital, contenidos madre, administración de redes, historias destacadas y sistema de reservas. Resultado: mayor fidelización, aumento sostenido de visitas y comunidad activa.', metrics: [{n:'+40%',l:'Fidelización'},{n:'Menú',l:'Digital creado'},{n:'100%',l:'Redes administradas'}], path: 'M0,35 C30,35 40,10 60,20 S80,0 100,5' }
+];
+
+const surveyQuestions = [
+  { q: '¿Qué tipo de negocio tienes?', o: ['Restaurante / Cafetería / Gastronomía','Tienda de ropa / Accesorios / Calzado','Barbería / Peluquería / Estética','Otro negocio local (farmacia, ferretería, etc.)'] },
+  { q: '¿Cuál es tu principal objetivo con el marketing digital hoy?', o: ['Conseguir más clientes nuevos en mi local','Aumentar las ventas por WhatsApp / pedidos','Mejorar la imagen y reconocimiento de mi marca','Fidelizar a los clientes actuales'] },
+  { q: '¿Con qué frecuencia publicas contenido en redes sociales?', o: ['Todos los días','3-4 veces por semana','1-2 veces por semana','Casi nunca o de forma esporádica'] },
+  { q: '¿Cuánto inviertes actualmente en publicidad digital (Meta Ads, Google, etc.) al mes?', o: ['Más de $500.000 COP','Entre $200.000 y $500.000 COP','Menos de $200.000 COP','No invierto nada en publicidad'] },
+  { q: '¿Qué es lo que más te frena para ver resultados en redes?', o: ['No sé qué contenido crear','Me falta tiempo para publicar y responder','No entiendo los números ni cómo optimizar','He probado pero no veo ventas reales'] },
+  { q: '¿Cuál es el ticket promedio de venta en tu negocio?', o: ['Bajo (menos de $20.000 COP)','Medio ($20.000 - $60.000 COP)','Alto ($60.000 - $150.000 COP)','Premium (más de $150.000 COP)'] }
+];
+
+// Diagnóstico integrado en generateDiag()
+
+const packagesData = [
+  { id: 1, name: 'Scale Pro', price: 1500000, reach: '+300K reproducciones/mes', roi: 'Clientes como Origen Café recuperaron su inversión en 4 días con una fracción de este presupuesto.', features: ['20 reels multiformato','40 piezas gráficas premium','20 flyers','Análisis de estadísticas','Creación de branding','Web personalizada','Restauración de perfil y catálogo de WhatsApp Business','Manejo de Facebook, Instagram y TikTok'], desc: 'El sistema todo-en-uno para dominar tu nicho. Incluye web, branding y gestión completa.', featured: true, tip: 'El paquete más completo que ofrecemos — diseñado para negocios que quieren dominar su nicho digitalmente.' },
+  { id: 2, name: 'Página Web', price: 250000, reach: '+4.000 visitas/mes estimadas', roi: 'Tu presencia digital abierta 24/7, diseñada para convertir visitantes en clientes que llaman.', features: ['Página web profesional (2 secciones)','Optimización SEO local','Contenido estratégico de cada sección','Formulario de contacto integrado','Diseño adaptado a mobile'], desc: 'Tu sucursal digital siempre activa.', featured: false, tip: 'El 75% de las personas juzga la credibilidad de un negocio por su sitio web antes de contactarlo.' },
+  { id: 3, name: 'Power Reach', price: 1000000, reach: '80K – 100K reproducciones', roi: 'Contenido mensual de alto impacto y posicionamiento.', features: ['15 reels multiformato','10 flyers','30 piezas gráficas','Organización de perfiles y WhatsApp Business','Distribución optimizada','Manejo de Facebook, Instagram y TikTok'], desc: 'Alcance masivo con producción de alto impacto.', featured: false, tip: 'La constancia en redes genera hasta 3x más consultas que publicar de forma esporádica.' },
+  { id: 4, name: 'Amplify Reach', price: 500000, reach: '10K – 23K reproducciones', roi: 'El equilibrio perfecto: calidad y frecuencia para crecer de forma sostenida sin presupuesto exagerado.', features: ['5 reels multiformato','1 video premium','15 fotografías','Servicio community','5 flyers publicitarios','Restauración del perfil','Manejo de Facebook, Instagram y TikTok'], desc: 'Crecimiento consistente con el balance ideal.', featured: false, tip: 'Los negocios que publican 5+ veces por semana generan el doble de interacciones y consultas.' },
+  { id: 5, name: 'Impact Reels', price: 250000, reach: '2K – 6K reproducciones', roi: 'El formato más potente para generar alcance orgánico rápido con bajo presupuesto.', features: ['3 reels estratégicos','8 fotografías','3 flyers publicitarios'], desc: 'Ideal para comenzar a construir audiencia real.', featured: false, tip: 'Los reels tienen un 22% más de alcance orgánico que cualquier otro formato en Instagram y TikTok.' },
+  { id: 6, name: 'Brand Precision', price: 150000, reach: 'Identidad sólida y memorable', roi: 'Una identidad visual fuerte eleva la percepción de calidad y justifica precios más altos.', features: ['6 piezas gráficas de alto nivel','Refinamiento de logo existente','Paleta de colores y tipografía','Manual de uso básico'], desc: 'Eleva la percepción de tu marca con diseño impecable.', featured: false, tip: 'Una identidad visual consistente aumenta el reconocimiento de marca hasta un 80% según estudios.' },
+  { id: 7, name: 'Optimize 360', price: 100000, reach: 'Claridad estratégica total', roi: 'Descubre exactamente qué está fallando antes de seguir invirtiendo en la dirección equivocada.', features: ['Auditoría completa de redes','Análisis de métricas actuales','Benchmarking vs competencia','Plan de mejora ejecutable con pasos concretos'], desc: 'Tu mapa de ruta para dejar de perder dinero.', featured: false, tip: 'Conocer tus métricas reales es el primer paso para convertir redes en ventas predecibles.' }
+];
+
+const faqData = [
+  { q: '¿Cuánto tiempo tardan en verse resultados reales?', a: 'Depende del servicio, pero en general en las primeras <strong>2 a 3 semanas</strong> ya empiezas a ver cambios notables en alcance e interacciones. Con pauta publicitaria (Meta Ads), los primeros resultados pueden llegar en 4 a 7 días, como ocurrió con Origen Café. Los resultados sostenidos y el crecimiento real de audiencia se consolidan entre el primer y segundo mes de trabajo consistente.' },
+  { q: '¿Necesito tener muchos seguidores para empezar?', a: 'No, para nada. De hecho, muchas marcas empiezan con nosotros desde <strong>cero seguidores</strong>. Nuestro enfoque es construir una comunidad real y comprometida, no inflar números que no se convierten en ventas. Una cuenta con 500 seguidores que compran es infinitamente más valiosa que 10.000 que solo dan like.' },
+  { q: '¿Qué diferencia a KOVEX de otras agencias?', a: 'Tres cosas fundamentales: primero, <strong>obsesión por los datos</strong> — cada decisión se toma en base a métricas reales, no intuición. Segundo, <strong>enfoque en conversiones</strong>, no en vanity metrics como likes o views. Tercero, <strong>equipo dedicado</strong> que aprende tu negocio a fondo. No somos una fábrica de contenido; somos socios estratégicos.' },
+  { q: '¿Cuánto debo invertir en publicidad además del paquete?', a: 'Depende de tus objetivos y tu mercado. Para comenzar a ver resultados con Meta Ads en Cartago y el Valle, recomendamos una <strong>inversión mínima de $30.000 a $50.000 COP diarios</strong> (aproximadamente $15–25 USD al mes). Con ese presupuesto manejado estratégicamente, hemos logrado alcances de +15.000 personas por campaña.' },
+  { q: '¿Puedo contratar un paquete y luego escalarlo?', a: 'Absolutamente. Nuestros paquetes están diseñados para escalar con tu negocio. Muchos clientes comienzan con <strong>Impact Reels o Amplify Reach</strong> para validar el mercado, y una vez que ven resultados pasan a Scale Pro. No hay contratos de permanencia ni penalidades por cambiar de plan.' },
+  { q: '¿Trabajan con negocios fuera de Cartago?', a: 'Sí. Aunque estamos basados en Cartago, Valle del Cauca, trabajamos con clientes en toda Colombia y algunos mercados en Latinoamérica. Todo el proceso de estrategia, producción y comunicación es <strong>100% remoto</strong>. Solo la sesión fotográfica presencial requiere un acuerdo de desplazamiento.' }
+];
+
+const legalContent = {
+  terms: `
+    <h2>Términos y Condiciones de Uso</h2>
+    <p>Última actualización: enero de 2026</p>
+    <p>El presente sitio web es operado por <strong>Kovex Agency</strong>, con domicilio en Cartago, Valle del Cauca, Colombia. Al acceder o utilizar este sitio, usted acepta los presentes Términos y Condiciones.</p>
+    <h3>1. Uso del sitio</h3>
+    <p>Este sitio tiene carácter informativo y comercial. El uso indebido del contenido, la reproducción parcial o total sin autorización, o cualquier actividad contraria a las leyes colombianas queda expresamente prohibido.</p>
+    <h3>2. Servicios</h3>
+    <p>La Agencia ofrece servicios de marketing digital, gestión de redes sociales, producción de contenido, diseño gráfico y publicidad digital. El alcance exacto de cada servicio se detalla en la propuesta comercial acordada por escrito.</p>
+    <h3>3. Pagos y facturación</h3>
+    <p>Los pagos se realizan por adelantado al inicio de cada período de servicio. Los precios publicados están expresados en pesos colombianos (COP) e incluyen el IVA cuando aplica. La Agencia emite factura electrónica conforme a la normativa colombiana.</p>
+    <h3>4. Propiedad del contenido</h3>
+    <p>Una vez realizado el pago completo, el cliente tiene derechos de uso sobre el contenido producido por la Agencia para su marca. La Agencia conserva el derecho de incluir el trabajo en su portafolio salvo indicación expresa del cliente.</p>
+    <h3>5. Confidencialidad</h3>
+    <p>La Agencia se compromete a mantener confidencial toda la información del cliente. El cliente otorga acceso a sus plataformas digitales únicamente para los fines del servicio contratado.</p>
+    <h3>6. Ley aplicable</h3>
+    <p>Estos términos se rigen por las leyes de la República de Colombia. Cualquier disputa será resuelta ante los tribunales competentes de Cartago, Valle del Cauca.</p>
+  `,
+  privacy: `
+    <h2>Política de Privacidad y Tratamiento de Datos Personales</h2>
+    <p>Última actualización: enero de 2026</p>
+    <p>En cumplimiento de la <strong>Ley 1581 de 2012</strong> y el Decreto 1377 de 2013 sobre Protección de Datos Personales en Colombia, Kovex Agency informa sobre el tratamiento de los datos recopilados a través de este sitio web.</p>
+    <h3>Responsable del tratamiento</h3>
+    <p><strong>Kovex Agency</strong> — Nicol Montoya, CEO<br>Cartago, Valle del Cauca, Colombia<br>Contacto: hola@kovexagency.com · +57 313 385 3506</p>
+    <h3>Datos que recopilamos</h3>
+    <ul>
+      <li>Nombre y datos de contacto proporcionados voluntariamente.</li>
+      <li>Respuestas al diagnóstico de marketing (uso interno para personalización).</li>
+      <li>Información de navegación básica (sin cookies de seguimiento de terceros).</li>
+    </ul>
+    <h3>Finalidad del tratamiento</h3>
+    <ul>
+      <li>Contactar al usuario para ofrecer el diagnóstico gratuito solicitado.</li>
+      <li>Personalizar la propuesta de servicios según el perfil del negocio.</li>
+      <li>Enviar información comercial relevante (con posibilidad de cancelar en cualquier momento).</li>
+    </ul>
+    <h3>Derechos del titular</h3>
+    <p>Conforme a la Ley 1581 de 2012, usted tiene derecho a conocer, actualizar, rectificar y suprimir sus datos personales. Para ejercer estos derechos, escriba a <strong>hola@kovexagency.com</strong> indicando su solicitud.</p>
+    <h3>Conservación de datos</h3>
+    <p>Los datos se conservan durante el tiempo necesario para prestar el servicio y cumplir obligaciones legales, y no se comparten con terceros sin autorización expresa del titular.</p>
+  `
+};
+
+/* ══════════════════════════════════════════
+   UTILIDADES
+═══════════════════════════════════════════ */
+const $ = id => document.getElementById(id);
+const fmt = n => '$' + n.toLocaleString('es-CO') + ' COP';
+const scrollToSection = id => document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+const wa = () => {
+  let msg = 'Hola KOVEX, me interesa un diagnóstico estratégico para mi negocio.';
+  if (cart.length > 0) {
+    msg = 'Hola KOVEX, me interesan estos paquetes:\n' + cart.map(p => '• ' + p.name).join('\n');
+    if ($('discount-check').checked) msg += '\n\n(Aplicando 20% de descuento primera compra)';
+    msg += '\nTotal estimado: ' + $('cart-total-value').textContent;
+  }
+  window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank');
+};
+
+/* ══════════════════════════════════════════
+   CURSOR CUSTOM
+═══════════════════════════════════════════ */
+const cursorDot  = $('cursor-dot');
+const cursorRing = $('cursor-ring');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursorDot.style.left  = mouseX + 'px';
+  cursorDot.style.top   = mouseY + 'px';
+  const g = $('cursor-glow');
+  if (g) { g.style.left = mouseX + 'px'; g.style.top = mouseY + 'px'; }
+});
+
+(function animRing() {
+  ringX = mouseX;
+  ringY = mouseY;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top  = ringY + 'px';
+  requestAnimationFrame(animRing);
+})();
+
+document.addEventListener('mouseover', e => {
+  if (e.target.closest('button, a, .scale-letter, .option-btn, .pain-item, .faq-question, input, label'))
+    document.body.classList.add('hovering');
+});
+document.addEventListener('mouseout', e => {
+  if (e.target.closest('button, a, .scale-letter, .option-btn, .pain-item, .faq-question, input, label'))
+    document.body.classList.remove('hovering');
+});
+document.addEventListener('mousedown', () => document.body.classList.add('clicking'));
+document.addEventListener('mouseup',   () => document.body.classList.remove('clicking'));
+
+/* ══════════════════════════════════════════
+   STAR FIELD – 3 capas con parallax mouse
+═══════════════════════════════════════════ */
+(function generateStars() {
+  const field = $('star-field');
+  const frag  = document.createDocumentFragment();
+  const layers = [
+    { count: 100, cls: 'star-sm', size: [1,2],   op: [0.1,0.35], dur: [2,4],   speed: 0.02 },
+    { count:  60, cls: 'star-md', size: [2,3],   op: [0.2,0.5],  dur: [3,5],   speed: 0.04 },
+    { count:  25, cls: 'star-lg', size: [3,5],   op: [0.3,0.6],  dur: [4,7],   speed: 0.07 }
+  ];
+  layers.forEach(l => {
+    for (let i = 0; i < l.count; i++) {
+      const s = document.createElement('div');
+      const sz = l.size[0] + Math.random() * (l.size[1] - l.size[0]);
+      s.className = 'star ' + l.cls;
+      s.dataset.speedX = (Math.random() - 0.5) * l.speed;
+      s.dataset.speedY = (Math.random() - 0.5) * l.speed;
+      s.dataset.origX  = Math.random() * 100;
+      s.dataset.origY  = Math.random() * 100;
+      s.style.cssText = `
+        left: ${s.dataset.origX}%;
+        top:  ${s.dataset.origY}%;
+        --d:  ${l.dur[0] + Math.random() * (l.dur[1]-l.dur[0])}s;
+        --delay: ${Math.random() * 5}s;
+        --op: ${l.op[0] + Math.random() * (l.op[1]-l.op[0])};
+        width:  ${sz}px;
+        height: ${sz}px;
+      `;
+      frag.appendChild(s);
+    }
+  });
+  field.appendChild(frag);
+})();
+
+// Autonomous star movement (no mouse parallax)
+(function animStars() {
+  const stars = document.querySelectorAll('.star');
+  const t = performance.now() / 1000;
+  stars.forEach((s, i) => {
+    const ox  = parseFloat(s.dataset.origX);
+    const oy  = parseFloat(s.dataset.origY);
+    const sx  = parseFloat(s.dataset.speedX) * 60;
+    const sy  = parseFloat(s.dataset.speedY) * 60;
+    const phi = (i * 2.399) % (Math.PI * 2);
+    s.style.left = (ox + Math.sin(t * Math.abs(sx) * 0.4 + phi) * Math.abs(sx)) + '%';
+    s.style.top  = (oy + Math.cos(t * Math.abs(sy) * 0.4 + phi) * Math.abs(sy)) + '%';
+  });
+  requestAnimationFrame(animStars);
+})();
+
+/* ══════════════════════════════════════════
+   GRID 3D TILT + SCROLL PARALLAX
+═══════════════════════════════════════════ */
+let gridScrollY = 0;
+let gridMouseRx = 0, gridMouseRy = 0, gridMouseActive = false, gridMouseTimer = null;
+window.addEventListener('scroll', () => {
+  gridScrollY = window.scrollY;
+}, { passive: true });
+
+document.addEventListener('mousemove', e => {
+  gridMouseRx = (e.clientY / window.innerHeight - 0.5) * 4;
+  gridMouseRy = (e.clientX / window.innerWidth  - 0.5) * -4;
+  gridMouseActive = true;
+  clearTimeout(gridMouseTimer);
+  gridMouseTimer = setTimeout(() => { gridMouseActive = false; }, 2000);
+  const g = $('grid');
+  if (g) g.style.transform = `translateY(${gridScrollY * 0.25}px) rotateX(${gridMouseRx}deg) rotateY(${gridMouseRy}deg)`;
+});
+window.addEventListener('scroll', () => {
+  const g = $('grid');
+  if (g) g.style.transform = `translateY(${window.scrollY * 0.25}px) rotateX(${gridMouseActive ? gridMouseRx : 0}deg) rotateY(${gridMouseActive ? gridMouseRy : 0}deg)`;
+}, { passive: true });
+
+(function animGrid() {
+  if (!gridMouseActive) {
+    const t = performance.now() / 1000;
+    const g = $('grid');
+    if (g) {
+      const bx = Math.sin(t * 0.18) * 0.6;
+      const by = Math.cos(t * 0.12) * 0.4;
+      g.style.transform = `translateY(${gridScrollY * 0.25}px) rotateX(${bx}deg) rotateY(${by}deg)`;
+    }
+  }
+  requestAnimationFrame(animGrid);
+})();
+
+/* ══════════════════════════════════════════
+   HERO TITLE 3D TILT
+═══════════════════════════════════════════ */
+document.addEventListener('mousemove', e => {
+  const title = $('hero-title');
+  if (!title) return;
+  const rx = (e.clientY / window.innerHeight - 0.5) * 8;
+  const ry = (e.clientX / window.innerWidth  - 0.5) * -8;
+  title.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+});
+
+/* ══════════════════════════════════════════
+   SECTION COLOR CHANGE ON SCROLL
+═══════════════════════════════════════════ */
+const sectionColors = {
+  hero:     'rgba(5,5,15,0.4)',
+  about:    'rgba(5,10,15,0.3)',
+  pain:     'rgba(15,5,5,0.3)',
+  scale:    'rgba(5,15,10,0.3)',
+  results:  'rgba(10,10,5,0.3)',
+  survey:   'rgba(5,5,20,0.3)',
+  packages: 'rgba(10,5,15,0.3)',
+  faq:      'rgba(5,10,10,0.3)',
+  cta:      'rgba(15,10,5,0.3)'
+};
+const overlay = $('section-overlay');
+window.addEventListener('scroll', () => {
+  const scrollMid = window.scrollY + window.innerHeight / 2;
+  let active = 'hero';
+  document.querySelectorAll('section').forEach(sec => {
+    if (sec.offsetTop <= scrollMid) active = sec.id;
+  });
+  if (overlay) overlay.style.background = sectionColors[active] || 'transparent';
+}, { passive: true });
+
+/* ══════════════════════════════════════════
+   PARTICLE SYSTEM (canvas)
+═══════════════════════════════════════════ */
+const canvas = $('particle-canvas');
+const ctx    = canvas ? canvas.getContext('2d') : null;
+let particles = [];
+
+function resizeCanvas() {
+  if (!canvas) return;
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas, { passive: true });
+
+class Particle {
+  constructor(x, y, color = '#fff') {
+    this.x  = x; this.y = y;
+    this.vx = (Math.random() - 0.5) * 8;
+    this.vy = (Math.random() - 0.5) * 8 - 2;
+    this.r  = 2 + Math.random() * 4;
+    this.alpha = 1;
+    this.color = color;
+    this.decay = 0.02 + Math.random() * 0.03;
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    this.vy += 0.15;
+    this.alpha -= this.decay;
+    this.r = Math.max(0, this.r - 0.05);
+  }
+  draw() {
+    if (!ctx) return;
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, this.alpha);
+    ctx.fillStyle   = this.color;
+    ctx.shadowBlur  = 6;
+    ctx.shadowColor = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+// Ambient floating particles (always on screen, 30-50)
+class AmbientParticle {
+  constructor() { this.reset(true); }
+  reset(initial) {
+    this.x     = Math.random() * (canvas ? canvas.width  : window.innerWidth);
+    this.y     = initial ? Math.random() * (canvas ? canvas.height : window.innerHeight)
+                          : (Math.random() < 0.5 ? -6 : (canvas ? canvas.height : window.innerHeight) + 6);
+    this.vx    = (Math.random() - 0.5) * 0.35;
+    this.vy    = (Math.random() - 0.5) * 0.35;
+    this.r     = 0.8 + Math.random() * 1.8;
+    this.alpha = 0.08 + Math.random() * 0.22;
+    this.pulse = Math.random() * Math.PI * 2;
+    this.pulseSpeed = 0.01 + Math.random() * 0.02;
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    this.pulse += this.pulseSpeed;
+    const w = canvas ? canvas.width  : window.innerWidth;
+    const h = canvas ? canvas.height : window.innerHeight;
+    if (this.x < -10 || this.x > w + 10 || this.y < -10 || this.y > h + 10) this.reset(false);
+  }
+  draw() {
+    if (!ctx) return;
+    const a = this.alpha * (0.7 + 0.3 * Math.sin(this.pulse));
+    ctx.save();
+    ctx.globalAlpha = a;
+    ctx.fillStyle   = '#ffffff';
+    ctx.shadowBlur  = 4;
+    ctx.shadowColor = 'rgba(255,255,255,0.5)';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+const ambientParticles = [];
+for (let i = 0; i < 40; i++) ambientParticles.push(new AmbientParticle());
+
+function spawnParticles(x, y, count = 15, color = '#fff') {
+  for (let i = 0; i < count; i++) particles.push(new Particle(x, y, color));
+}
+
+function animParticles() {
+  if (ctx) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ambientParticles.forEach(p => { p.update(); p.draw(); });
+    particles = particles.filter(p => p.alpha > 0);
+    particles.forEach(p => { p.update(); p.draw(); });
+  }
+  requestAnimationFrame(animParticles);
+}
+animParticles();
+
+/* ══════════════════════════════════════════
+   RIPPLE + PARTICLE CLICK
+═══════════════════════════════════════════ */
+document.addEventListener('click', e => {
+  const target = e.target.closest('button, .scale-letter, .pain-item, .option-btn');
+  if (target) {
+    // Ripple
+    const r = document.createElement('div');
+    r.className = 'ripple';
+    r.style.cssText = `left:${e.clientX - 20}px;top:${e.clientY - 20}px;width:40px;height:40px;`;
+    document.body.appendChild(r);
+    setTimeout(() => r.remove(), 700);
+    // Particles
+    spawnParticles(e.clientX, e.clientY, 12);
+  }
+  // Energy wave on add-to-cart buttons
+  if (e.target.closest('.package-btns .btn:not(.btn-outline)')) {
+    const w = document.createElement('div');
+    w.className = 'wave-ring';
+    w.style.cssText = `left:${e.clientX}px;top:${e.clientY}px;width:40px;height:40px;`;
+    document.body.appendChild(w);
+    setTimeout(() => w.remove(), 800);
+  }
+});
+
+/* ══════════════════════════════════════════
+   TOAST
+═══════════════════════════════════════════ */
+function showToast(msg, duration = 2000) {
+  const tc = $('toast-container');
+  const t  = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  tc.appendChild(t);
+  setTimeout(() => {
+    t.classList.add('out');
+    setTimeout(() => t.remove(), 300);
+  }, duration);
+}
+
+/* ══════════════════════════════════════════
+   MARKETING TIPS (reemplaza notificaciones falsas)
+═══════════════════════════════════════════ */
+const marketingTips = [
+  { icon: '📈', text: 'El 78% de los negocios locales aumentan sus ventas con Instagram Reels' },
+  { icon: '🔥', text: 'Publicar 3 veces por semana genera 5x más engagement que una vez' },
+  { icon: '💡', text: 'Un cliente feliz recomienda tu negocio a 9 personas en promedio' },
+  { icon: '🎯', text: 'Los anuncios con video tienen un 49% más de retorno que los estáticos' },
+  { icon: '🚀', text: 'Perfil de WhatsApp Business optimizado = 40% más consultas mensuales' },
+  { icon: '✨', text: 'El contenido educativo convierte 3 veces más que el promocional puro' },
+  { icon: '📊', text: 'El 91% de los compradores revisan las redes antes de visitar un local' },
+  { icon: '💬', text: 'Responder en menos de 1 hora aumenta la tasa de cierre un 60%' },
+  { icon: '🎬', text: 'Los reels con música de tendencia generan 22% más alcance orgánico' },
+  { icon: '⭐', text: '5 reseñas positivas en Google pueden duplicar las visitas a tu local' },
+  { icon: '🛒', text: 'Las marcas con identidad visual sólida cierran ventas 30% más rápido' },
+  { icon: '📱', text: 'El 70% de los colombianos descubre nuevos negocios por historias de Instagram' }
+];
+let mtIdx = 0;
+function showMarketingTip() {
+  const tip = marketingTips[mtIdx % marketingTips.length];
+  mtIdx++;
+  const el = $('marketing-tip');
+  if (!el) return;
+  $('mt-icon').textContent = tip.icon;
+  $('mt-text').textContent = tip.text;
+  el.setAttribute('aria-hidden', 'false');
+  el.classList.add('show');
+  setTimeout(() => {
+    el.classList.remove('show');
+    el.setAttribute('aria-hidden', 'true');
+  }, 7000);
+}
+setTimeout(() => {
+  showMarketingTip();
+  setInterval(showMarketingTip, 10000);
+}, 3000);
+
+/* ══════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════ */
+const navbar = $('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+}, { passive: true });
+
+function openDrawer() {
+  $('nav-drawer').classList.add('open');
+  $('hamburger').classList.add('open');
+  $('hamburger').setAttribute('aria-expanded', 'true');
+  $('nav-drawer').setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+  $('nav-drawer').classList.remove('open');
+  $('hamburger').classList.remove('open');
+  $('hamburger').setAttribute('aria-expanded', 'false');
+  $('nav-drawer').setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+$('hamburger').addEventListener('click', () => {
+  $('nav-drawer').classList.contains('open') ? closeDrawer() : openDrawer();
+});
+
+/* ══════════════════════════════════════════
+   INTERSECTION OBSERVER con stagger
+═══════════════════════════════════════════ */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      entry.target.classList.remove('out');
+
+      // Stagger children
+      entry.target.querySelectorAll('.stagger-child').forEach((el, i) => {
+        el.style.setProperty('--si', (i * 0.1) + 's');
+        el.style.setProperty('--sd', '0.6s');
+      });
+
+      // Pain points animation
+      if (entry.target.id === 'pain') {
+        document.querySelectorAll('.pain-item').forEach((p, i) => {
+          setTimeout(() => p.classList.add('visible'), i * 150);
+        });
+      }
+      // Counters
+      if (entry.target.id === 'about' && !entry.target.dataset.counted) {
+        entry.target.dataset.counted = '1';
+        animateCounter('cnt-brands', 0, 23, 1200);
+        animateCounter('cnt-repro',  0, 2,  1500, 'M+');
+        animateCounter('cnt-years',  0, 3,  900,  '+');
+      }
+      // Draw result charts on scroll
+      if (entry.target.id === 'results') {
+        setTimeout(() => {
+          document.querySelectorAll('.chart-path').forEach((p, i) => {
+            setTimeout(() => p.classList.add('drawn'), i * 300);
+          });
+        }, 400);
+      }
+    } else {
+      if (entry.target.classList.contains('in')) {
+        entry.target.classList.remove('in');
+        entry.target.classList.add('out');
+      }
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('section').forEach(s => observer.observe(s));
+
+function animateCounter(id, from, to, duration, suffix = '', prefix = '+') {
+  const el = $(id);
+  if (!el) return;
+  const start = performance.now();
+  const update = now => {
+    const elapsed  = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased    = 1 - Math.pow(1 - progress, 3);
+    el.textContent = prefix + Math.floor(from + (to - from) * eased) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+// Hero stats count-up on load
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const hsRepro = $('hs-repro');
+    const hsSeg   = $('hs-seg');
+    const hsCons  = $('hs-cons');
+    if (hsRepro) {
+      const start = performance.now();
+      const run = now => {
+        const p = Math.min((now - start) / 1600, 1);
+        const e = 1 - Math.pow(1 - p, 3);
+        hsRepro.textContent = '+' + (e * 2.3).toFixed(1) + 'M';
+        if (p < 1) requestAnimationFrame(run);
+      };
+      requestAnimationFrame(run);
+    }
+    if (hsSeg)  animateCounter('hs-seg',  0, 847, 1400);
+    if (hsCons) animateCounter('hs-cons', 0, 30,  1200, '%');
+  }, 400);
+});
+
+/* ══════════════════════════════════════════
+   PAIN POINTS
+═══════════════════════════════════════════ */
+const painList = $('pain-list');
+painPoints.forEach(p => {
+  const div = document.createElement('div');
+  div.className = 'pain-item';
+  div.setAttribute('role', 'listitem');
+  div.innerHTML = `
+    <svg class="pain-arrow" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+    <span>${p.text}</span>
+  `;
+  painList.appendChild(div);
+});
+
+/* ══════════════════════════════════════════
+   MÉTODO SCALE
+═══════════════════════════════════════════ */
+document.querySelectorAll('.scale-letter').forEach(el => {
+  el.addEventListener('click', function () {
+    const idx    = parseInt(this.dataset.index);
+    const letter = this.dataset.letter;
+
+    document.querySelectorAll('.scale-letter').forEach(l => {
+      l.classList.remove('active');
+      l.setAttribute('aria-selected', 'false');
+    });
+    this.classList.add('active');
+    this.setAttribute('aria-selected', 'true');
+
+    // Dot indicator
+    const dot = $('scale-dot');
+    dot.style.opacity = '1';
+    if (window.innerWidth <= 768) {
+      dot.style.top = (10 + idx * 18) + '%';
+    } else {
+      dot.style.left = (8 + idx * 21) + '%';
+    }
+
+    const d = scaleData[idx];
+    $('scale-display').innerHTML = `<div class="scale-display-inner"><strong style="color:var(--tw);font-family:var(--fh);font-size:1rem">${d.title}</strong><br><br>${d.desc}</div>`;
+
+    if (letter === 'A') {
+      const flash = document.createElement('div');
+      flash.className = 'rocket-flash';
+      document.body.appendChild(flash);
+      setTimeout(() => flash.remove(), 700);
+    }
+  });
+
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+  });
+});
+
+/* ══════════════════════════════════════════
+   RESULTADOS REALES
+═══════════════════════════════════════════ */
+const resultsGrid = $('results-grid');
+resultsData.forEach((r, ri) => {
+  const card = document.createElement('article');
+  card.className = 'result-card stagger-child';
+  card.style.setProperty('--si', (0.15 + ri * 0.15) + 's');
+  card.innerHTML = `
+    <div class="result-tag">${r.tag}</div>
+    <svg class="result-card-icon" viewBox="0 0 24 24" aria-hidden="true">${r.icon}</svg>
+    <h3>${r.title}</h3>
+    <p>${r.desc}</p>
+    <div class="result-metrics" role="list" aria-label="Métricas de ${r.title}">
+      ${r.metrics.map(m => `
+        <div class="result-metric" role="listitem">
+          <span class="result-metric-n">${m.n}</span>
+          <span class="result-metric-l">${m.l}</span>
+        </div>
+      `).join('')}
+    </div>
+    <svg class="result-chart" viewBox="0 0 100 40" aria-hidden="true">
+      <path class="chart-path" d="${r.path}" />
+    </svg>
+  `;
+  resultsGrid.appendChild(card);
+});
+
+/* ══════════════════════════════════════════
+   SURVEY / DIAGNÓSTICO
+═══════════════════════════════════════════ */
+const surveyAnswers = new Array(surveyQuestions.length).fill(null);
+const surveyContainer = $('survey-questions');
+
+surveyQuestions.forEach((sq, i) => {
+  const block = document.createElement('div');
+  block.className = 'question-block' + (i === 0 ? ' active' : '');
+  block.id = 'q-' + i;
+  block.setAttribute('role', 'group');
+  block.setAttribute('aria-label', 'Pregunta ' + (i + 1));
+  block.innerHTML = `
+    <h3>${i + 1}/6 — ${sq.q}</h3>
+    <div class="options-grid" role="radiogroup" aria-label="Opciones de respuesta">
+      ${sq.o.map((opt, oi) => `
+        <button class="option-btn" role="radio" aria-checked="false" onclick="selectOption(${i}, ${oi}, this)" data-opt="${oi}">
+          ${opt}
+          <svg class="check-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+      `).join('')}
+    </div>
+  `;
+  surveyContainer.appendChild(block);
+});
+
+function selectOption(qIdx, optIdx, btn) {
+  surveyAnswers[qIdx] = optIdx;
+  document.querySelectorAll(`#q-${qIdx} .option-btn`).forEach(b => {
+    b.classList.remove('selected');
+    b.setAttribute('aria-checked', 'false');
+  });
+  btn.classList.add('selected');
+  btn.setAttribute('aria-checked', 'true');
+  spawnParticles(btn.getBoundingClientRect().left + btn.offsetWidth/2, btn.getBoundingClientRect().top + btn.offsetHeight/2, 8);
+
+  const progress = Math.round(((qIdx + 1) / surveyQuestions.length) * 100);
+  $('progress-bar').style.width = progress + '%';
+  $('progress-bar-wrap').setAttribute('aria-valuenow', progress);
+
+  setTimeout(() => {
+    if (qIdx < surveyQuestions.length - 1) {
+      $('q-' + qIdx).classList.remove('active');
+      $('q-' + (qIdx + 1)).classList.add('active');
+      $('progress-label').textContent = 'Pregunta ' + (qIdx + 2) + ' de 6';
+    } else {
+      $('progress-label').textContent = '¡Listo! Genera tu diagnóstico';
+      $('btn-diag').style.display = 'inline-block';
+    }
+  }, 400);
+}
+
+function generateDiag() {
+  const btnDiag = $('btn-diag');
+  btnDiag.classList.add('btn-flash');
+  setTimeout(() => btnDiag.classList.remove('btn-flash'), 800);
+
+  // Q0: tipo de negocio (0=gastro, 1=ropa, 2=barberia, 3=otro)
+  // Q1: objetivo (0=clientes, 1=whatsapp ventas, 2=imagen, 3=fidelizar)
+  // Q2: frecuencia (0=diario, 1=3-4/sem, 2=1-2/sem, 3=casi nunca)
+  // Q3: inversión ads (0=+500k, 1=200-500k, 2=-200k, 3=nada)
+  // Q4: freno (0=no sé qué crear, 1=falta tiempo, 2=no entiendo números, 3=no ventas)
+  // Q5: ticket (0=bajo, 1=medio, 2=alto, 3=premium)
+  const objetivo = surveyAnswers[1] ?? 0;
+  const freq     = surveyAnswers[2] ?? 3;
+  const ads      = surveyAnswers[3] ?? 3;
+  const freno    = surveyAnswers[4] ?? 0;
+  const ticket   = surveyAnswers[5] ?? 0;
+
+  let tag, title, diagText, pkgName;
+
+  if (ticket >= 2 && ads <= 1) {
+    tag      = 'Perfil: Negocio Premium Listo para Dominar';
+    title    = 'Tu negocio tiene el potencial — falta el sistema que lo multiplique.';
+    pkgName  = 'Scale Pro';
+    diagText = 'Con un ticket de venta alto y algo de experiencia en publicidad, tu negocio está listo para el siguiente nivel. El problema no es tu producto; es que tu presencia digital aún no comunica el valor real que ofreces a la escala que necesitas.<br><br>Nuestro análisis indica que el paquete <strong>' + pkgName + '</strong> es ideal para ti: incluye producción intensiva de contenido, branding completo, web personalizada y gestión activa en todas las plataformas. Negocios con tu perfil han recuperado la inversión en los primeros días de campaña, como Origen Café. <strong>Es momento de que tus redes trabajen tan duro como tú.</strong>';
+  } else if (freno === 3 && freq <= 2) {
+    tag      = 'Perfil: Negocio Activo Sin Conversiones';
+    title    = 'Estás haciendo todo bien… excepto una cosa clave.';
+    pkgName  = 'Optimize 360';
+    diagText = 'Publicas, te esfuerzas, tal vez hasta inviertes — pero las ventas no responden. Esto es más común de lo que crees, y casi siempre tiene una causa identificable: contenido sin hook, segmentación incorrecta, o falta de llamada a la acción efectiva.<br><br>Te recomendamos comenzar con <strong>' + pkgName + '</strong>: una auditoría completa que analiza tus métricas actuales, la competencia y te entrega un plan ejecutable con pasos concretos. Una vez identificados los cuellos de botella, escalamos con <strong>Power Reach</strong> para que cada peso invertido convierta. No más adivinar — solo datos y acción.';
+  } else if (freq >= 2 || ads === 3) {
+    tag      = 'Perfil: Negocio Local con Gran Oportunidad';
+    title    = 'Tu negocio tiene clientes esperando — solo que no saben que existes.';
+    pkgName  = freq >= 3 ? 'Impact Reels' : 'Amplify Reach';
+    diagText = 'La mayoría de negocios como el tuyo tienen un producto o servicio excelente, pero una presencia digital casi invisible. Tus clientes ideales están en Instagram, TikTok y WhatsApp buscando exactamente lo que ofreces — y si no apareces, les estás regalando esas ventas a la competencia.<br><br>El paquete <strong>' + pkgName + '</strong> es el punto de partida perfecto: contenido estratégico de alto impacto pensado para generar alcance orgánico real sin un presupuesto exagerado. Cientos de negocios locales en Colombia han transformado su visibilidad en menos de 30 días con este enfoque. <strong>Es tu momento.</strong>';
+  } else if (objetivo === 2 || freno === 0) {
+    tag      = 'Perfil: Negocio que Necesita Identidad Sólida';
+    title    = 'Tu negocio merece una imagen que inspire confianza desde el primer scroll.';
+    pkgName  = 'Brand Precision';
+    diagText = 'Cuando tu identidad visual no está alineada con el valor real de tu negocio, los clientes te subestiman — aunque tengas el mejor producto de la zona. La primera impresión en redes sociales se da en menos de 3 segundos, y ese tiempo lo decide tu imagen.<br><br>El paquete <strong>' + pkgName + '</strong> está diseñado para elevar la percepción de tu marca: piezas gráficas de alto nivel, refinamiento de logo, paleta de colores consistente y manual de uso. Una identidad visual sólida no solo atrae más clientes — justifica precios más altos y genera confianza instantánea. <strong>Tu negocio merece verse como lo que realmente vale.</strong>';
+  } else if (objetivo === 3 || freno === 1) {
+    tag      = 'Perfil: Negocio con Base de Clientes por Activar';
+    title    = 'Ya tienes el activo más valioso — tus clientes. Hora de activarlos.';
+    pkgName  = 'Power Reach';
+    diagText = 'Tienes clientes que te compran y te recomiendan, pero tu presencia digital no está capitalizando ese potencial. La fidelización digital — comunidad activa, contenido relevante, respuesta rápida — multiplica el valor de cada cliente que ya tienes y convierte a cada seguidor en un embajador de tu marca.<br><br>El paquete <strong>' + pkgName + '</strong> incluye manejo de comunidad, producción de contenido de alto volumen y organización completa de tus perfiles y WhatsApp Business. Con frecuencia de publicación optimizada y distribución en Facebook, Instagram y TikTok, tu comunidad pasará de pasiva a activa. <strong>Tus mejores clientes ya existen — es hora de que trabajen para ti.</strong>';
+  } else if (objetivo === 0 || objetivo === 1) {
+    tag      = 'Perfil: Negocio Listo para Generar Pedidos';
+    title    = 'Tienes un objetivo claro — construyamos el sistema que lo logre.';
+    pkgName  = 'Amplify Reach';
+    diagText = 'Quieres más clientes en tu local o más pedidos por WhatsApp — eso es perfectamente alcanzable con la estrategia correcta. El problema es que sin contenido consistente y una distribución inteligente, tu negocio es invisible para la mayoría de personas que podrían comprarte hoy.<br><br>El paquete <strong>' + pkgName + '</strong> te da el volumen, la calidad y la frecuencia de publicación necesaria para aparecer en el radar de tus clientes ideales: reels estratégicos, fotografías profesionales, flyers publicitarios y gestión completa en todas las plataformas. <strong>En 30 días notarás la diferencia.</strong>';
+  } else {
+    tag      = 'Perfil: Negocio Local en Crecimiento';
+    title    = 'Tienes todo para crecer — solo necesitas el sistema correcto.';
+    pkgName  = 'Amplify Reach';
+    diagText = 'Tu negocio ya tiene una base: clientes reales, un producto valioso y ganas de crecer. Lo que falta es el motor digital que convierta ese potencial en ventas predecibles. Sin una estrategia de contenido consistente y una presencia activa en redes, estás dejando dinero sobre la mesa cada semana.<br><br>El paquete <strong>' + pkgName + '</strong> es la combinación perfecta de volumen, calidad y frecuencia. El crecimiento sostenido empieza con consistencia — y eso es exactamente lo que te damos. <strong>En 30 días notarás la diferencia.</strong>';
+  }
+
+  $('diag-profile-tag').textContent = tag;
+  $('diag-title').textContent = title;
+  $('diag-text').innerHTML = diagText;
+
+  const recPkg = packagesData.find(p => p.name === pkgName);
+  const recTargetId = recPkg ? 'pkg-card-' + recPkg.id : 'packages';
+  $('btn-ver-paquete').onclick = () => {
+    scrollToSection('packages');
+    setTimeout(() => {
+      const card = $(recTargetId);
+      if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 500);
+  };
+
+  const result = $('diag-result');
+  result.style.display = 'block';
+  result.classList.add('diag-result-reveal');
+  btnDiag.style.display = 'none';
+  result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  showToast('✅ ¡Diagnóstico generado!');
+}
+
+/* ══════════════════════════════════════════
+   PAQUETES
+═══════════════════════════════════════════ */
+const packagesGrid = $('packages-grid');
+
+packagesData.forEach((p, pi) => {
+  const card = document.createElement('article');
+  card.id = 'pkg-card-' + p.id;
+  card.className = 'package-card stagger-child' + (p.featured ? ' featured' : '');
+  card.style.setProperty('--si', (0.1 + pi * 0.08) + 's');
+
+  const tipHtml = p.tip ? `
+    <div class="pkg-tip"><span class="pkg-tip-icon">💡</span><span>${p.tip}</span></div>` : '';
+
+  card.innerHTML = `
+    ${tipHtml}
+    <h3 class="package-name">${p.name}</h3>
+    <div class="package-price">${fmt(p.price)}</div>
+    <div class="package-reach">Alcance estimado: ${p.reach}</div>
+    <div class="package-roi">💡 ${p.roi}</div>
+    <ul class="package-features">
+      ${p.features.map(f => `<li>${f}</li>`).join('')}
+    </ul>
+    <div class="package-btns">
+      <button class="btn" onclick="addToCart(${p.id})" aria-label="Agregar ${p.name} al carrito">Agregar</button>
+    </div>
+  `;
+  packagesGrid.appendChild(card);
+});
+
+
+
+
+/* ══════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════ */
+const faqList = $('faq-list');
+faqData.forEach(f => {
+  const item = document.createElement('div');
+  item.className = 'faq-item';
+  item.setAttribute('role', 'listitem');
+  item.innerHTML = `
+    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')" aria-expanded="false">
+      <span>${f.q}</span>
+      <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="faq-answer-wrap">
+      <div class="faq-answer">
+        <div class="faq-answer-inner">${f.a}</div>
+      </div>
+    </div>
+  `;
+  item.querySelector('.faq-question').addEventListener('click', function () {
+    const isActive = item.classList.contains('active');
+    this.setAttribute('aria-expanded', !isActive);
+  });
+  faqList.appendChild(item);
+});
+
+/* ══════════════════════════════════════════
+   CARRITO – con localStorage
+═══════════════════════════════════════════ */
+let cart = [];
+try {
+  const saved = localStorage.getItem('kovex_cart');
+  if (saved) cart = JSON.parse(saved);
+} catch (e) {}
+
+function saveCart() {
+  try { localStorage.setItem('kovex_cart', JSON.stringify(cart)); } catch (e) {}
+}
+
+function addToCart(id) {
+  const pkg = packagesData.find(p => p.id === id);
+  if (!cart.find(p => p.id === id)) cart.push(pkg);
+  saveCart();
+  requestAnimationFrame(() => {
+    updateCart();
+    $('cart').classList.add('open');
+    $('cart').setAttribute('aria-hidden', 'false');
+  });
+  showToast(`¡Agregado! ✅ ${pkg.name}`);
+  spawnParticles(window.innerWidth / 2, window.innerHeight / 2, 20);
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(p => p.id !== id);
+  saveCart();
+  updateCart();
+}
+
+function toggleCart() {
+  const c = $('cart');
+  const isOpen = c.classList.contains('open');
+  c.classList.toggle('open', !isOpen);
+  c.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
+}
+
+function updateCart() {
+  const itemsEl    = $('cart-items');
+  const discounted = $('discount-check').checked;
+
+  if (cart.length === 0) {
+    itemsEl.innerHTML = `
+      <div class="cart-empty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Aún no has agregado paquetes.<br>Explora nuestros servicios arriba.</p>
+      </div>`;
+  } else {
+    itemsEl.innerHTML = cart.map(p => `
+      <div class="cart-item" role="listitem">
+        <div>
+          <div class="cart-item-name">${p.name}</div>
+          <div class="cart-item-price">${fmt(p.price)}</div>
+        </div>
+        <button class="cart-remove" onclick="removeFromCart(${p.id})" aria-label="Quitar ${p.name} del carrito">Quitar</button>
+      </div>
+    `).join('');
+  }
+
+  const subtotal = cart.reduce((s, p) => s + p.price, 0);
+  const total    = discounted ? Math.round(subtotal * 0.8) : subtotal;
+  const totalEl  = $('cart-total-value');
+  const origEl   = $('cart-total-original');
+  totalEl.textContent = fmt(total);
+  if (discounted && subtotal !== total) {
+    origEl.textContent = fmt(subtotal);
+    origEl.style.display = 'inline';
+  } else {
+    origEl.style.display = 'none';
+  }
+
+  $('cart-count').textContent = cart.length;
+  const sticky = $('sticky-cart');
+  sticky.classList.toggle('visible', window.scrollY > 300 && cart.length > 0);
+}
+
+window.addEventListener('scroll', () => {
+  $('sticky-cart').classList.toggle('visible', window.scrollY > 300 && cart.length > 0);
+}, { passive: true });
+
+updateCart();
+
+/* ══════════════════════════════════════════
+   MODAL LEGAL
+═══════════════════════════════════════════ */
+function openModal(type) {
+  $('modal-content').innerHTML = legalContent[type] || '';
+  $('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  $('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+    closeDrawer();
+    $('cart').classList.remove('open');
+    $('cart').setAttribute('aria-hidden', 'true');
+  }
+});
+</script>
+</body>
+</html>
